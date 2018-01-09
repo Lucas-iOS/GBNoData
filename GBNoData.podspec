@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
   s.name             = 'GBNoData'
   s.version          = '1.0.0'
-  s.summary          = 'A short description of GBNoData.'
+  s.summary          = 'TableView / CollectionView No Data'
   s.homepage         = 'https://github.com/Lucas-iOS/GBNoData'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Lucas' => 'gaobo_it@163.com' }
