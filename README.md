@@ -5,16 +5,16 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+## Code
 
 ```Objective-C
-	UIView *view = [[UIView alloc] initWithFrame:self.view.bounds];
-    view.backgroundColor = [UIColor yellowColor];
-    self.tableView.customNoDataView = view;
-    __weak typeof(self) weakSelf = self;
-    self.tableView.callBack = ^(UIView *view) {
-        [weakSelf.tableView reloadData];
-    };
+UIView *view = [[UIView alloc] initWithFrame:self.view.bounds];
+view.backgroundColor = [UIColor yellowColor];
+self.tableView.customNoDataView = view;
+__weak typeof(self) weakSelf = self;
+self.tableView.callBack = ^(UIView *view) {
+    [weakSelf.tableView reloadData];
+};
 ```
 ## Installation
 
