@@ -7,6 +7,15 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+```Objective-C
+	UIView *view = [[UIView alloc] initWithFrame:self.view.bounds];
+    view.backgroundColor = [UIColor yellowColor];
+    self.tableView.customNoDataView = view;
+    __weak typeof(self) weakSelf = self;
+    self.tableView.callBack = ^(UIView *view) {
+        [weakSelf.tableView reloadData];
+    };
+```
 ## Installation
 
 GBNoData is available through [CocoaPods](http://cocoapods.org). To install
